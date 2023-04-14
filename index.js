@@ -8,8 +8,6 @@ const cookieParser = require("cookie-parser");
 const dotenv = require("dotenv").config();
 const port = 4000;
 
-
-
 // app.get("/", function (req, res) {
 //     res.status(201).json("Welcome to Password Reset Authentication App")
 // })
@@ -17,7 +15,7 @@ const port = 4000;
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-    origin: "*"
+    origin: "https://reset-password-frontend.vercel.app"
 }));
 app.use(router);
 
